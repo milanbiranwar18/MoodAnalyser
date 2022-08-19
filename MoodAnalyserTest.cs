@@ -19,18 +19,6 @@ namespace MoodAnalyserMSTest
 
         }
 
-
-        [TestMethod]
-        public void GivenAnyMoodShouldReturnHappy()
-        {
-            string excepted = "HAPPY";
-            string message = "I am in Any Mood";
-            MoodAnalyserClass moodAnalyser = new MoodAnalyserClass(message);
-
-            string mood = moodAnalyser.AnalyseMood();
-
-            Assert.AreEqual(excepted, mood);
-
-        }
+        
     }
 }
