@@ -15,6 +15,11 @@ namespace MoodAnalyser
             this.message = message;
         }
 
+        public MoodAnalyserClass()
+        {
+            
+        }
+
         public string AnalyseMood()
         {
             if (this.message.Contains("SAD"))
