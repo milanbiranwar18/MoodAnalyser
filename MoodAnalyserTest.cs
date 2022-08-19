@@ -44,5 +44,22 @@ namespace MoodAnalyserMSTest
             Assert.AreEqual(excepted, mood);
 
         }
+
+
+            [TestMethod]
+            [DataRow(null)]
+            public void GivenHappyMood_ShouldReturnHappy(string message)
+            {
+                string excepted = "HAPPY";
+               
+                MoodAnalyserClass moodAnalyser = new MoodAnalyserClass(message);
+
+                string mood = moodAnalyser.AnalyseMood();
+
+                Assert.AreEqual(excepted, mood);
+
+            }
+
+
     }
 }
