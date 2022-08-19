@@ -80,7 +80,22 @@ namespace MoodAnalyserMSTest
 
 
 
-       
+        [TestMethod]
+        public void Given_Empty_Mood_Throw_MoodAnalysisException_Indicating_EmptyMood()
+        {
+            try
+            {
+                string message = "";
+                MoodAnalyser1 moodAnalyser = new MoodAnalyser1(message);
+                string mood = moodAnalyser.analyseMood();
+
+            }
+
+            catch(MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Mood should not be empty", e.Message);
+            }
+        }
 
 
        
