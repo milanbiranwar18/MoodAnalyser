@@ -105,7 +105,7 @@ namespace MoodAnalyserMSTest
             object expected = new MoodAnalyser1(message);
             object obj = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyserAppWithCore.MoodAnalyser", "MoodAnalyser");
            expected.Equals(obj);
-            
+            //Assert.AreNotEqual(expected, obj);
 
         }
 
