@@ -31,7 +31,7 @@ namespace MoodAnalyser
                 }
                 catch (ArgumentNullException)
                 {
-                   // throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_CLASS, "Class not found");
+                    throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.NO_SUCH_CLASS, "Class not found");
                 }
                 
             }
